@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tongoal Lobby</title>
+  <style>
+    /* CSS styles for the layout and appearance */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .lobby-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .lobby-icons {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      margin-top: 20px;
+    }
+    .lobby-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+    }
+    .lobby-icon img {
+      width: 50px;
+      height: 50px;
+    }
+    .lobby-icon span {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="lobby-container">
+    <img src="tongoal-logo.png" alt="Tongoal" style="width: 200px;">
+    <div class="lobby-icons">
+      <div class="lobby-icon" onclick="navigateToPlay()">
+        <img src="play-icon.png" alt="Play">
+        <span>Play</span>
+      </div>
+      <div class="lobby-icon" onclick="navigateToLeagues()">
+        <img src="leagues-icon.png" alt="Leagues">
+        <span>Leagues</span>
+      </div>
+      <div class="lobby-icon" onclick="navigateToShop()">
+        <img src="shop-icon.png" alt="Shop">
+        <span>Shop</span>
+      </div>
+      <div class="lobby-icon" onclick="navigateToSettings()">
+        <img src="settings-icon.png" alt="Settings">
+        <span>Settings</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript functions for handling icon clicks
+    function navigateToPlay() {
+      // Code to navigate to the play functionality
+      console.log("Navigating to play");
+    }
+
+    function navigateToLeagues() {
+      // Code to navigate to the leagues functionality
+      console.log("Navigating to leagues");
+    }
+
+    function navigateToShop() {
+      // Code to navigate to the shop functionality
+      console.log("Navigating to shop");
+    }
+
+    function navigateToSettings() {
+      // Code to navigate to the settings functionality
+      console.log("Navigating to settings");
+    }
+  </script>
+</body>
+</html>
